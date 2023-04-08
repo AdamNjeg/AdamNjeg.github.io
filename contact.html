@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="/styles.css">
+    <script>
+        function changeMood() {
+            var image = document.getElementById('SmileyImage');
+            if (image.src.match("SmileyLedsen")) {
+                image.src = "img/SmileyGlad.bmp";
+            } else {
+                image.src = "img/SmileyLedsen.bmp";
+            }
+        }
+
+    </script>
 
 </head>
 
@@ -14,7 +25,7 @@
     <p> You can contact me at: BigChungus@gmail.com</p>
     <button onclick="window.location.href = 'index.html';">Home</button>
     <img id="SmileyImage" src="img/SmileyLedsen.bmp" style="width:100px">
-    <button onclick="document.getElementById('SmileyImage').src='img/SmileyGlad.bmp'">Make Happy</button>
+    <button onclick="changeMood()">Make Happy</button>
 </body>
 
 </html>
