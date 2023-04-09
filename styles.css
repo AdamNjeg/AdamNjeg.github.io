@@ -45,7 +45,7 @@ button:hover {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 90%;
     color: #818181;
     display: block;
 }
@@ -58,14 +58,4 @@ button:hover {
     margin-left: 20%;
     /* Same as the width of the sidebar */
     padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
 }
