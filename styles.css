@@ -43,7 +43,7 @@ button:hover {
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px;
     text-decoration: none;
     display: block;
     overflow: hidden;
