@@ -59,3 +59,13 @@ button:hover {
     /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
