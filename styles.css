@@ -6,10 +6,10 @@ body {
 }
 
 button {
-    background-color: aquamarine;
-    border: none;
-    color: rgb(202, 18, 18);
-    padding: 15px 32px;
+    background-color: rgb(169, 169, 169);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(57, 9, 105);
+    padding: 16px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
