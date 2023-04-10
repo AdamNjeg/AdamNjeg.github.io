@@ -52,7 +52,7 @@ button:hover {
     width: 100%;
     color: #818181;
     display: block;
-    font-size: large;
+    font-size: 30px;
 }
 
 .sidenav a:hover {
