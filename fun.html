@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Fun</title>
     <link rel="stylesheet" href="/styles.css">
+    <script>
+        function changeMood() {
+            var image = document.getElementById('SmileyImage');
+            if (image.src.match("SmileyLedsen")) {
+                image.src = "img/SmileyGlad.bmp";
+            } else {
+                image.src = "img/SmileyLedsen.bmp";
+            }
+        }
 
-
+    </script>
 </head>
 
 <body>
@@ -20,8 +29,11 @@
     <div class="main">
         <h1> Contact</h1>
         <p> You can contact me at: BigChungus@gmail.com</p>
-
+        <img id="SmileyImage" src="img/SmileyLedsen.bmp" style="width:100px">
+        <br> <br>
+        <button onclick="changeMood()">Change mood</button>
     </div>
+
 
 </body>
 
