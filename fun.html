@@ -17,6 +17,13 @@
         }
 
     </script>
+    <script>
+        var ball = document.getElementById("ball");
+        var theTop = ball.style.position.top;
+        function moveFunction() {
+            ball.style.position.top = 200;
+        }
+    </script>
 </head>
 
 <body>
@@ -33,14 +40,8 @@
         <br> <br>
         <br> <br>
         <img id="ball" src="img/ball_transparent.png"
-            style="position:absolute; left: 400; top: 100; width: 200; height: 200;" onclick="moveFunction()" />
-        <script>
-            var ball = document.getElementById("ball");
-            var theTop = ball.style.position.top;
-            function moveFunction() {
-                ball.style.position.top = theTop + 10;
-            }
-        </script>
+            style="position:absolute; left: 400; top: 100; width: 200; height: 200;" onclick="moveFunction()">
+
 
     </div>
 
