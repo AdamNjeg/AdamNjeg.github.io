@@ -20,7 +20,7 @@
     <script>
         var ball = document.getElementById("ball");
         var theTop = ball.style.position.top;
-        function moveFunction() {
+        function moveBall() {
             ball.style.position.top = 200;
         }
     </script>
@@ -41,7 +41,7 @@
         <br> <br>
         <img id="ball" src="img/ball_transparent.png"
             style="position:absolute; left: 400; top: 100; width: 200; height: 200;" onclick="moveFunction()">
-
+        <button onclick="moveBall()">Move ball</button>
 
     </div>
 
