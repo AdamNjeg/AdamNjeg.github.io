@@ -30,6 +30,17 @@
         <img id="SmileyImage" src="img/SmileyLedsen.bmp" style="width:100px">
         <br> <br>
         <button onclick="changeMood()">Change mood</button>
+        <br> <br>
+        <br> <br>
+        <img id="ball" src="img/ball.png" style="width:100px" onclick="moveFunction">
+        <script>
+            var ball = document.getElementById("ball");
+            var theTop = ball.style.position.top;
+            function moveFunction() {
+                ball.style.position.top = theTop + 10;
+            }
+        </script>
+
     </div>
 
 
