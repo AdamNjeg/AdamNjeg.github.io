@@ -30,7 +30,7 @@
                 await sleep(30);
                 elem.style.top = parseInt(elem.style.top, 10) - speed + "px";
                 speed = speed - acceleration;
-            } while (elem.style.top <= 700);
+            } while (parseInt(elem.style.top, 10) <= 700);
         }
     </script>
 </head>
