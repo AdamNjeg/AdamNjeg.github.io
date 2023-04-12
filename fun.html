@@ -20,7 +20,7 @@
     <script>
         function moveBall() {
             var prevTop = document.getElementById('ball').style.top;
-            document.getElementById('ball').style.top = String(50 + Number(prevTop));
+            document.getElementById('ball').style.top = String(50 + ParseInt(prevTop)) + "px";
         }
         function moveFunction() {
             var ball = document.getElementById('ball');
