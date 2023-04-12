@@ -18,9 +18,20 @@
 
     </script>
     <script>
-        function moveBall() {
-            var prevTop = document.getElementById('ball').style.top;
-            document.getElementById('ball').style.top = String(50 + ParseInt(prevTop)) + "px";
+
+        async function moveBall() {
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            var elem = document.getElementById("ball")
+            var speed = 10;
+            var acceleration = 0.1;
+            while (speed > -10) {
+                await sleep(10);
+                elem.style.top = parseInt(elem.style.top, 10) - speed + "px";
+                speed = speed - acceleration;
+
+            }
         }
         function moveFunction() {
             var ball = document.getElementById('ball');
@@ -43,7 +54,7 @@
         <br> <br>
         <br> <br>
         <img id="ball" src="img/ball_transparent.png"
-            style="position:absolute; left: 400; top: 100; width: 200; height: 200;" onclick="moveFunction()">
+            style="position:absolute; left: 400; top: 500; width: 200; height: 200;" onclick="moveFunction()">
         <button onclick="moveBall()">Move ball</button>
 
     </div>
