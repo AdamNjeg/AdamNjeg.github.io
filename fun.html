@@ -26,13 +26,11 @@
             var elem = document.getElementById("ball")
             var speed = 100;
             var acceleration = 7;
-            while (speed >= -100) {
-                await sleep(30
-                );
+            do {
+                await sleep(30);
                 elem.style.top = parseInt(elem.style.top, 10) - speed + "px";
                 speed = speed - acceleration;
-
-            }
+            } while (elem.style.top <= 700);
         }
     </script>
 </head>
