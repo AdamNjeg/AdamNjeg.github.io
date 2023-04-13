@@ -50,48 +50,7 @@
         <br> <br>
         <img id="ball" src="img/REALBALL.png" style="position:absolute; left: 400; top: 500; width: 200; height: 200;">
         <button onclick="moveBall()">Kick ball</button>
-        <div id="container">
-            <div id="animate">My animation will go here</div>
-        </div>
     </div>
-
-    <style>
-        #container {
-            width: 250px;
-            height: 250px;
-            background-color: #000;
-            position: relative;
-        }
-
-        #animate {
-            width: 50px;
-            height: 50px;
-            background-color: #f00;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        @keyframes mymove {
-            from {
-                top: 0px;
-                left: 0px;
-            }
-
-            to {
-                top: 200px;
-                left: 200px;
-            }
-        }
-
-        #animate {
-            animation-name: mymove;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-        }
-    </style>
-
-
 </body>
 
 </html>
