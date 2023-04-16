@@ -1,24 +1,24 @@
 #gameBoard {
     display: grid;
-    grid-template-columns: repeat(10, 50px);
+    grid-template-columns: repeat(10, 31px);
     /* adjust the number of columns and the size of the squares as needed */
-    grid-template-rows: repeat(10, 50px);
+    grid-template-rows: repeat(20, 31px);
     /* adjust the number of rows and the size of the squares as needed */
 }
 
 .square {
     border: 1px solid black;
-    width: 50px;
+    width: 30px;
     /* adjust the size of the squares as needed */
-    height: 50px;
+    height: 30px;
     /* adjust the size of the squares as needed */
 }
 
 .squareFilled {
     border: 1px solid black;
     background-color: blue;
-    width: 50px;
+    width: 30px;
     /* adjust the size of the squares as needed */
-    height: 50px;
+    height: 30px;
     /* adjust the size of the squares as needed */
 }
