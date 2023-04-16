@@ -5,6 +5,17 @@
     height: 100vh;
 }
 
-#canvas {
-    border: 2px solid #000;
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.squareFilled {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
